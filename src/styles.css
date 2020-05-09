@@ -111,6 +111,12 @@ app-resi a
   color: #444242;
 }
 
+app-covid a
+{
+  cursor: pointer;
+  cursor: hand;
+  color: #444242;
+}
 /* Input */
 
 input {
@@ -203,7 +209,15 @@ app-resi h3 {
   margin: 0;
 }
 
+app-covid h3 {
+  color: #d2a719;
+  margin: 0;
+}
 app-resi a{
+color: #f1f1f1;
+}
+
+app-covid a{
 color: #f1f1f1;
 }
 

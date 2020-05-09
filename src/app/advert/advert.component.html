@@ -1,0 +1,101 @@
+<form [formGroup]="advertForm" (ngSubmit)="onSubmit(advertForm.value)">
+<table class="center" style="width:100%">
+  
+<!--<tr>
+   <th colspan="2">Advertise with us</th>
+</tr>-->
+<tr align="center">
+  <th colspan="5">
+    <ul class="topnav">
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="button fancy-button"><i class="material-icons">menu</i></a>
+    <div class="dropdown-content">
+      <a [routerLink]="['/resi']"><h2>Residential News</h2></a>
+<a [routerLink]="['/comm']"><h2>Commercial News</h2></a>
+<a [routerLink]="['/free']"><h2>Free Downloads</h2></a>
+<!--<a [routerLink]="['/landl']"><h2>Industrial News</h2></a>
+<a [routerLink]="['/inter']"><h2>Lifestyle and Leisure</h2></a>
+<a [routerLink]="['/inter']"><h2>International News</h2></a>
+<a [routerLink]="['/inter']"><h2>Legal</h2></a>-->
+    </div>
+  </li>
+<li><a [routerLink]="['/covid']" class="button fancy-button"><h2>COVID-19</h2></a></li>
+<li><a [routerLink]="['/news']" class="button fancy-button"><h2>NEWS</h2></a></li>
+<li><a [routerLink]="['/podcast']" class="button fancy-button"><h2>PODCASTS</h2></a></li>
+<li><a [routerLink]="['/free']" class="button fancy-button"><h2>FREE DOWNLOADS</h2></a></li>
+<li><a [routerLink]="['/contact']" class="button fancy-button"><h2>CONTACT US</h2></a></li>
+<!--<li><a [routerLink]="['/cart']" class="button fancy-button"><i class="material-icons">shopping_cart</i></a></li>-->
+ </ul> </th></tr>
+
+<tr align ="center">
+  <td colspan="5"><h1>Prime Advertising Location With Eswatini Property Review</h1></td>
+<!--td colspan="9"><img src=""></td>-->
+</tr>
+
+
+<tr align ="center">
+  <td colspan="5"><p>
+Eswatini Property Review is Eswatini's premier property lifestyle magazine. 
+An informative read tailored for property owners and buyers, investors
+and real estate agents, interior designers, architects and various
+property enthusiasts...an advertisers dream advertising channel!
+
+At Eswatini Property Review our primary aim is to
+inform property stakeholders and the country at
+large about property opportunities and
+challenges as well.
+Tell your story through our digital media and hard copy print channels via
+our own engaging website and social media platforms oering regular and
+frequent news updates and a wider target audience reach.Tell your story through
+our digital media and
+hard copy print
+channels...</p></td>
+</tr>
+
+<tr align ="center">
+  <td><a [routerLink]="['/benefits']" class="button fancy-button">Benefits of advertising with Eswatini Property Review</a></td>
+<td><a [routerLink]="['/readchar']" class="button fancy-button">Readership Characteristics</a></td>
+<td><a [routerLink]="['/readtm']" class="button fancy-button">Readership Target Market</a></td>
+<td><a [routerLink]="['/rates']" class="button fancy-button">Advertising Rates</a></td>
+<td><a [routerLink]="['/rates']" class="button fancy-button">Download our complete rate cut</a></td>
+</tr>
+
+<tr>
+<td colspan="5">To advertise with us please fill in your information and attach your proof of payment and artwork below. Alternatively please email us or give us a call for more information on advertising opportunities. <h2><label>Banking Details FNB Eswatini │ Account Name: Rasper Media (PTY) LTD
+Account No.: 627 4072 6792 │ Branch Code: 280 164</label></h2></td>
+</tr>
+
+<tr>
+  <td colspan="5"><label for="email">Email :</label> ntokozo@raspermedia.com/info@raspermedia.com <label for="cell">Cell :</label> +268 7661 8219 / 7675 657</td>
+</tr>
+
+<tr>
+  <td colspan="2"><label for="nameandsurname">Name:</label></td>
+  <td><input id="nameandsurname" type="text" formControlName="nameandsurname" ></td>
+  </tr>
+
+<tr>
+  <td colspan="2"><label for="Eaddress">Email Address:</label></td>
+  <td><input id="Eaddress" type="text" formControlName="Eaddress"></td>
+</tr>
+
+<tr>
+  <td colspan="2"><label for="artw">Artwork:</label></td>
+  <td><input id="artw" type="file" formControlName="artw"></td>
+</tr>
+<tr>
+  <td colspan="2"><label for="POP">Proof Of Payment:</label></td>
+  <td><input id="POP" type="file" formControlName="POP"></td>
+</tr>
+<tr>
+  <td colspan="2"><label for="Queries">Queries:</label></td>
+  <td><input id="Queries" type="text" formControlName="Queries"></td>
+</tr>
+<tr>
+  <td colspan="5"><button class="button" type="submit">SUBMIT</button></td>
+</tr>
+
+</table>
+</form>
+
+

@@ -1,0 +1,59 @@
+
+
+<!--<p>
+  <a routerLink="/shipping">Delivery Prices</a>
+</p>-->
+ 
+
+
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)" >
+<table id="t03" class="center" style="width:100%" layout-align="center center">
+<tr>
+  <th colspan="2">
+    <ul class="topnav">
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="button fancy-button"><i class="material-icons">menu</i></a>
+    <div class="dropdown-content">
+      <a [routerLink]="['/resi']"><h2>Residential News</h2></a>
+<a [routerLink]="['/comm']"><h2>Commercial News</h2></a>
+<a [routerLink]="['/landl']"><h2>Industrial News</h2></a>
+<a [routerLink]="['/inter']"><h2>Lifestyle and Leisure</h2></a>
+<a [routerLink]="['/inter']"><h2>International News</h2></a>
+<a [routerLink]="['/inter']"><h2>Legal</h2></a>
+    </div>
+  </li>
+<li><a [routerLink]="['/news']" class="button fancy-button"><h2>NEWS</h2></a></li>
+<li><a [routerLink]="['/podcast']" class="button fancy-button"><h2>PODCASTS</h2></a></li>
+<li><a [routerLink]="['/advert']" class="button fancy-button"><h2>ADVERTISE</h2></a></li>
+<li><a [routerLink]="['/subsc']" class="button fancy-button"><h2>SUBSCRIBE</h2></a></li>
+<li><a [routerLink]="['/contact']" class="button fancy-button"><h2>CONTACT US</h2></a></li>
+<li><a [routerLink]="['/cart']" class="button fancy-button"><i class="material-icons">shopping_cart</i></a></li>
+ </ul> </th></tr>
+<div class="cart-item" *ngFor="let item of items">
+  <span>{{ item.name }}</span>
+  <span>{{ item.price | currency: 'E'  }}</span>
+</div>
+<tr>
+    <td colspan="2"><h1>Shopping Basket</h1></td>
+</tr>
+
+<tr>  
+   <td><label for="name">Name</label></td>
+   <td><input id="name" type="text" formControlName="name"></td>
+</tr>
+
+<tr>
+    <td><label for="address">Address</label></td>
+    <td><input id="address" type="text" formControlName="address"></td>
+</tr>
+
+<tr>
+  <!--<td><a [routerLink]="['/thanks']" class="button fancy-button">Purchase</a></td>-->
+  <td colspan="2"><button class="button" type="submit">PURCHASE</button></td>
+</tr>
+
+</table>
+</form>
+
+
+ 

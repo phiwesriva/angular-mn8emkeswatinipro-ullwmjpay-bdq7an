@@ -1,0 +1,92 @@
+<!--<td>
+<a [routerLink]="['/free']" class="button fancy-button">Free Downloads</a></td>
+<td>
+<a [routerLink]="['/free']" class="button fancy-button">About us</a></td>
+-->
+
+
+<div *ngFor="let product of products; index as productId">
+  <table class="center" style="width:100%">
+<tr>
+  <th colspan="2">
+    <ul class="topnav">
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="button fancy-button"><i class="material-icons">menu</i></a>
+    <div class="dropdown-content">
+      <a [routerLink]="['/resi']"><h2>Residential News</h2></a>
+<a [routerLink]="['/comm']"><h2>Commercial News</h2></a>
+<a [routerLink]="['/free']"><h2>Free Downloads</h2></a>
+<!--<a [routerLink]="['/landl']"><h2>Industrial News</h2></a>
+<a [routerLink]="['/inter']"><h2>Lifestyle and Leisure</h2></a>
+<a [routerLink]="['/inter']"><h2>International News</h2></a>
+<a [routerLink]="['/inter']"><h2>Legal</h2></a>-->
+    </div>
+  </li>
+<li><a [routerLink]="['/covid']" class="button fancy-button"><h2>COVID-19</h2></a></li>
+<li><a [routerLink]="['/news']" class="button fancy-button"><h2>NEWS</h2></a></li>
+<li><a [routerLink]="['/podcast']" class="button fancy-button"><h2>PODCASTS</h2></a></li>
+<li><a [routerLink]="['/free']" class="button fancy-button"><h2>FREE DOWNLOADS</h2></a></li>
+<li><a [routerLink]="['/contact']" class="button fancy-button"><h2>CONTACT US</h2></a></li>
+ </ul> </th></tr>
+<tr>
+<td colspan="2"><h1 align="center">Out Now!!!</h1></td>
+</tr>
+
+<tr>
+<td><a [title]="product.name" [routerLink]="['/products', productId]">
+      <img src="https://raw.githubusercontent.com/phiwesriva/angular-mn8emkeswatinipro-e6w3hm/master/src/assets/Issue7.png" width="710" height="1000" ></a></td>
+
+
+<td>
+  <ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+      <img [src]="images[0]" alt="Random first slide" width="700" height="1000">
+      <!--<div class="carousel-caption">
+        <h3>First slide label</h3>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div>-->
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[1]" alt="Random second slide" width="700" height="1000">
+      <!--<div class="carousel-caption">
+        <h3>Second slide label</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>-->
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[2]" alt="Random third slide" width="700" height="1000">
+     <!-- <div class="carousel-caption">
+        <h3>Third slide label</h3>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </div>-->
+    </ng-template>
+  </ngb-carousel></td>
+
+</tr>
+
+<!--
+<tr>
+<td><p *ngIf="product.description">{{ product.description }}</p></td>
+</tr>
+-->
+<tr>
+  <td><h3 align="center"><a [routerLink]="['/comm']">Commercial News!!!</a></h3></td>
+  <td><h3 align="center"><a [routerLink]="['/resi']">Residential News!!!!</a></h3></td>
+</tr>
+
+<tr> 
+  <td><a [routerLink]="['/commd']"><img src="https://raw.githubusercontent.com/phiwesriva/angular-mn8emkeswatinipro-e6w3hm/master/src/assets/Comm1.jpg" width="700" height="1000"></a></td>
+ 
+ <td><a [routerLink]="['/resid']"><img src="https://raw.githubusercontent.com/phiwesriva/angular-mn8emkeswatinipro-e6w3hm/master/src/assets/Secttitle1.jpg" width="700" height="1000"></a></td>
+ </tr>
+<!--
+<tr>
+   <td><a [routerLink]="['/landl']"><h3>Leisure and Lifestyle</h3></a></td><td><a [routerLink]="['/inter']"><h3>International News</h3></a></td>
+</tr>
+<tr>
+  <td><a [routerLink]="['/landl']"><img src=""></a></td>
+  <td><a [routerLink]="['/inter']"><img src=""></a></td>
+</tr>-->
+
+</table>
+</div>

@@ -1,0 +1,160 @@
+<!--<form oninput="x.value=parseInt(insights.value)+parseInt(copiesperissue.value)" [formGroup]="subscForm" (ngSubmit)="onSubmit(subscForm.value)">-->
+
+<form [formGroup]="subscForm" (ngSubmit)="onSubmit(subscForm.value)">
+<table class="center" style="width:100%">
+ <tr>
+  <th colspan="5">
+    <ul class="topnav">
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="button fancy-button"><i class="material-icons">menu</i></a>
+    <div class="dropdown-content">
+      <a [routerLink]="['/resi']"><h2>Residential News</h2></a>
+<a [routerLink]="['/comm']"><h2>Commercial News</h2></a>
+<a [routerLink]="['/free']"><h2>Free Downloads</h2></a>
+<!--<a [routerLink]="['/landl']"><h2>Industrial News</h2></a>
+<a [routerLink]="['/inter']"><h2>Lifestyle and Leisure</h2></a>
+<a [routerLink]="['/inter']"><h2>International News</h2></a>
+<a [routerLink]="['/inter']"><h2>Legal</h2></a>-->
+    </div>
+  </li>
+<li><a [routerLink]="['/covid']" class="button fancy-button"><h2>COVID-19</h2></a></li>
+<li><a [routerLink]="['/news']" class="button fancy-button"><h2>NEWS</h2></a></li>
+<li><a [routerLink]="['/podcast']" class="button fancy-button"><h2>PODCASTS</h2></a></li>
+<li><a [routerLink]="['/subsc']" class="button fancy-button"><h2>SUBSCRIBE</h2></a></li>
+<li><a [routerLink]="['/contact']" class="button fancy-button"><h2>CONTACT US</h2></a></li>
+ </ul> </th></tr>
+
+  <tr align ="center">
+    
+    <td colspan="4"><h1>Subscribe!!!!</h1></td>
+</tr>
+<!--
+<tr>
+  <td colspan="3"><img src="https://raw.githubusercontent.com/phiwesriva/angular-mn8emkeswatinipro-e6w3hm/master/src/assets/subscribe2.png" width="94%"  height="132"></td></tr>
+<tr> 
+<!--<h2>2020 ESWATINI PROPERTY REVIEW SUBSCRIPTION FORM</h2>
+<td colspan="4"><label for="Price"> Price per annum:</label> E300 including delivery <label for="frequency">Frequency:</label> Every Two Months <label>Number of copies per annum:</label>6  
+   <label for="package">Package includes:</label> Eswatini Property Review Print x 6, Online Edition, Podcasts and Newsletters<label>Banking Details FNB Eswatini │ Account Name: Rasper Media (PTY) LTD Account No.: 627 4072 6792 │ Branch Code: 280 164</label>
+
+</tr>
+
+<!--<label for="insights">
+Insights(Research)
+</label>
+<tr>
+  <td colspan="4">
+   For an additional E99  once off you get Insights every four months,make your selection below
+</td>
+</tr>
+
+<tr align="center">
+  <td colspan="2"><select matNativeControl required id="insights">
+  <option value="0">Please select</option>
+<option value="99">Insights(Research)</option>
+</select></td>
+</tr>
+<tr>-->
+<!--
+<p>
+  Value: {{ insights.value }}
+
+</p>-->
+
+  <!-- <label for="copiesperissue">
+      Select number of copies per issue
+    </label>
+
+  <td colspan="2"><select matNativeControl required id="copiesperissue">
+<option value="0">Select number of copies per issue</option>
+<option value="300">1 copy per issue</option>
+<option value="600">2 copies per issue</option>
+<option value="900">3 copies per issue</option>
+<option value="1200">4 copies per issue</option>
+<option value="1500">5 copies per issue</option>
+<option value="1800">6 copies per issue</option>
+<option value="2100">7 copies per issue</option>
+<option value="2400">8 copies per issue</option>
+<option value="2700">9 copies per issue</option>
+<option value="3000">10 copies per issue</option>
+<option value="3300">11 copies per issue</option>
+<option value="3600">12 copies per issue</option>
+<option value="3900">13 copies per issue</option>
+<option value="4200">14 copies per issue</option>
+<option value="4500">15 copies per issue</option>
+<option value="4800">16 copies per issue</option>
+<option value="5100">17 copies per issue</option>
+<option value="5400">18 copies per issue</option>
+<option value="5700">19 copies per issue</option>
+<option value="6000">20 copies per issue</option>
+  </select></td>
+</tr>
+
+<tr align="center"><td colspan="2">Your total is going to be = E <output name="x" for="insights copiesperissue"></output></td>
+</tr>--->
+<tr>
+<td><label for="nameandsurname">Name</label></td>
+<td><input id="nameandsurname" type="text" formControlName="nameandsurname"></td>
+</tr>
+
+<tr>
+<td><label for="Cname">Company Name(If applicable)</label></td>
+<td><input id="Cname" type="text" formControlName="Cname"></td>
+</tr>
+<!--
+<tr>
+<td><label for="address">Address</label></td> 
+<td><input id="address" type="text" formControlName="address"></td>
+</tr>
+<tr>
+<td><label for="Tnumber">Tel Number </label></td>
+<td><input id="Tnumber" type="text" formControlName="Tnumber"></td>
+</tr>-->
+
+<tr align="center">
+<td><label for="Cnumber">Contact Number</label></td>
+<td><input id="Cnumber" type="text" formControlName="Cnumber"></td>
+</tr>
+
+<tr>
+<td><label for="Eaddress">Email Address</label></td>
+<td><input id="Eaddress" type="text" formControlName="Eaddress"></td>
+</tr>
+
+<tr align="center">
+<td><label for="DOB">Year Of Birth</label></td>
+<td><input id="DOB" type="text" formControlName="DOB"></td>
+</tr>
+
+<tr align="center">
+  <td><label for="insights">Region</label></td>
+  <td><select matNativeControl required id="insights">
+  <option>Please select</option>
+<option>Hhohho</option>
+<option>Manzini</option>
+<option>Lubombo</option>
+<option>Shiselweni</option>
+</select></td>
+</tr>
+
+<!--
+<tr>
+<td><label for="Paddress">Postal Address</label></td>
+<td><input id="Paddress" type="text" formControlName="Paddress"></td>
+</tr>
+
+<tr align="center"> 
+  <td ><label for="POP">Proof Of Payment</label></td>
+  <td><input id="POP" type="file" formControlName="POP"></td>
+</tr>
+
+<tr>
+  <td colspan="2"><label for="Queries">Queries:</label></td>
+  <td><input id="Queries" type="text" formControlName="Queries"></td>
+</tr>-->
+
+<tr align="center">
+  <td colspan="4"><button class="button fancy-button" type="submit">SUBMIT</button></td>
+</tr>
+
+</table>
+</form>

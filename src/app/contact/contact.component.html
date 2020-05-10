@@ -40,7 +40,7 @@
 </tr>
 
 <tr>
-  <td><label for="Tnumber">Contact Number:</label><input id="Tnumber" type="tel" formControlName="Tnumber"></td>
+  <td><label for="Cnumber">Contact Number:</label><input id="Cnumber" type="tel" formControlName="Cnumber"></td>
 
 <tr>
   <td><label for="Eaddress">Email Address:</label>
@@ -49,9 +49,9 @@
 <tr>
 
   <td><label for="areaofinterest">Area of interest:</label>
-  <select matNativeControl required id="areaofinterest">
+  <select matNativeControl formControlName="areaofinterest" required id="areaofinterest">
 <option >Area of interest</option>
-<option >Subscribe</option>
+
 <option >Advertise</option>
 <option >Other</option>
   </select></td>

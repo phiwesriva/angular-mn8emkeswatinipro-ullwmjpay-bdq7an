@@ -17,7 +17,6 @@ contactForm;
 
       nameandsurname: '',
       Cname: '',
-      Tnumber: '',
       Cnumber: '',
       Eaddress: '',
       areaofinterest: '',

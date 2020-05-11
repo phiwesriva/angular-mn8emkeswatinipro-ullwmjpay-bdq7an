@@ -33,7 +33,7 @@
 <tr>
   <td><label for="nameandsurname">Name:</label>
   <input id="nameandsurname" type="text" formControlName="nameandsurname" required></td>
-<div *ngIf="nameandsurname.invalid && (nameandsurname.dirty || nameandsurname.touched)"
+<!--<div *ngIf="nameandsurname.invalid && (nameandsurname.dirty || nameandsurname.touched)"
     class="alert alert-danger">
 
   <div *ngIf="nameandsurname.errors.required">
@@ -42,7 +42,7 @@
   <div *ngIf="nameandsurname.errors.minlength">
     Name must be at least 4 characters long.
   </div>
-</div>
+</div>-->
 </tr>
 <tr>
   <td><label for="Cname">Company Name(If applicable:</label>
@@ -51,7 +51,7 @@
 
 <tr>
   <td><label for="Cnumber">Contact Number:</label><input id="Cnumber" type="tel" formControlName="Cnumber" required></td>
-<div *ngIf="Cnumber.invalid && (Cnumber.dirty || Cnumber.touched)"
+<!--<div *ngIf="Cnumber.invalid && (Cnumber.dirty || Cnumber.touched)"
     class="alert alert-danger">
 
   <div *ngIf="Cnumber.errors.required">
@@ -60,7 +60,7 @@
   <div *ngIf="Cnumber.errors.minlength">
     Contact Number must be at least 4 characters long.
   </div>
-</div>
+</div>-->
 <tr>
   <td><label for="Eaddress">Email Address:</label>
   <input id="Eaddress" type="email" formControlName="Eaddress"></td>
@@ -71,7 +71,7 @@
   <select matNativeControl formControlName="areaofinterest" required id="areaofinterest">
 <option >Area of interest</option>
 <option >Advertise</option>
-<option >PropertyInsights/Research</option>
+<option >Property Insights/Research</option>
 <option >Podcasts</option>
 <option >Become a reporter</option>
 <option >Other</option>
@@ -84,7 +84,7 @@
   </tr>
 
 <tr>
-  <td colspan="2"><button class="button" type="submit">SUBMIT</button></td></tr>
+  <td colspan="2"><button class="button" type="submit" [disabled]="!profileForm.valid">SUBMIT</button></td></tr>
   </table>
 </form>
 

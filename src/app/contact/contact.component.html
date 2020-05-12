@@ -23,7 +23,7 @@
  </ul> </th></tr>
 
 <tr>
-  <td colspan="2"><h1>We Would Like To From You</h1></td>
+  <td colspan="2"><h1>We Would Like To  From You</h1></td>
 </tr>
 
 <tr>
@@ -31,7 +31,7 @@
 </tr>
 
 <tr>
-  <td><label for="nameandsurname">Name:</label>
+  <td><label for="nameandsurname">Name:*</label>
   <input id="nameandsurname" type="text" formControlName="nameandsurname" required></td>
 <!--<div *ngIf="nameandsurname.invalid && (nameandsurname.dirty || nameandsurname.touched)"
     class="alert alert-danger">
@@ -50,7 +50,7 @@
 </tr>
 
 <tr>
-  <td><label for="Cnumber">Contact Number:</label><input id="Cnumber" type="tel" formControlName="Cnumber" required></td>
+  <td><label for="Cnumber">Contact Number:*</label><input id="Cnumber" type="tel" formControlName="Cnumber" required></td>
 <!--<div *ngIf="Cnumber.invalid && (Cnumber.dirty || Cnumber.touched)"
     class="alert alert-danger">
 
@@ -67,7 +67,7 @@
 </tr>
 <tr>
 
-  <td><label for="areaofinterest">Area of interest:</label>
+  <td><label for="areaofinterest">Area of interest:*</label>
   <select matNativeControl formControlName="areaofinterest" required id="areaofinterest">
 <option >Area of interest</option>
 <option >Advertise</option>
@@ -84,7 +84,7 @@
   </tr>
 
 <tr>
-  <td colspan="2"><button class="button" type="submit" [disabled]="!profileForm.valid">SUBMIT</button></td></tr>
+  <td colspan="2"><button class="button" type="submit" [disabled]="!contactForm.valid" >SUBMIT</button></td></tr>
   </table>
 </form>
 

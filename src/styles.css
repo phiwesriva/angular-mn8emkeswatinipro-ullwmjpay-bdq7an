@@ -165,13 +165,37 @@ label {
   opacity: 0.8;
   font-weight: bold;
   }
+
+.button:disabled, button:disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+  .button2, button2 {
+  display: inline-flex;
+  width: 20%;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 2px;
+  font-size: 14px;
+  cursor: pointer;
+ background-color:rgb(10, 10, 10);
+  color:#d2a719;
+  border: none;
+}
+
+.button2:hover, button2:hover {
+  opacity: 0.8;
+  font-weight: bold;
+  }
+  
 th {
   padding-top: 2px;
   text-align: left;
   background-color: black;
   color: white;}
 
-.button:disabled, button:disabled {
+.button2:disabled, button2:disabled {
   opacity: 0.5;
   cursor: auto;
 }

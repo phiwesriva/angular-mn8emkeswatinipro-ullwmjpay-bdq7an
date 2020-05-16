@@ -32,7 +32,7 @@
 
 <tr>
   <td><label for="nameandsurname">Name:*</label>
-  <input id="nameandsurname" type="text" formControlName="nameandsurname" required></td>
+  <input minlength="4"id="nameandsurname" type="text" formControlName="nameandsurname" required></td>
 <!--<div *ngIf="nameandsurname.invalid && (nameandsurname.dirty || nameandsurname.touched)"
     class="alert alert-danger">
 
@@ -45,12 +45,12 @@
 </div>-->
 </tr>
 <tr>
-  <td><label for="Cname">Company Name(If applicable:</label>
-  <input id="Cname" type="text" formControlName="Cname"></td>
+  <td><label for="Cname">Company Name(If applicable):</label>
+  <input minlength="4" id="Cname" type="text" formControlName="Cname"></td>
 </tr>
 
 <tr>
-  <td><label for="Cnumber">Contact Number:*</label><input id="Cnumber" type="tel" formControlName="Cnumber" required></td>
+  <td><label for="Cnumber">Contact Number:*</label><input minlength="2" id="Cnumber" type="tel" formControlName="Cnumber" required></td>
 <!--<div *ngIf="Cnumber.invalid && (Cnumber.dirty || Cnumber.touched)"
     class="alert alert-danger">
 
@@ -83,9 +83,20 @@
      <input id="Info" type="textarea" rows="10" cols="35" formControlName="Info" required></td>
   </tr>
 
+<!--<tr>
+  <td colspan="2"><button class="button2" type="submit" [disabled]="!contactForm.valid" >SUBMIT</button></td>
+</tr>-->
+
 <tr>
-  <td colspan="2"><button class="button2" ancy type="submit" [disabled]="!contactForm.valid" >SUBMIT</button></td></tr>
+  <td colspan="2"><button class="button2" type="submit" [disabled]="!profileForm.valid">SUBMIT</button></td>
+</tr>
+
   </table>
+
+ <!-- <p>
+  Form Status: {{ profileForm.status }}
+</p>-->
+
 </form>
 
   <label for="name">Our Address</label>Raspers Media (PTY) LTD No: 302, Upper Deck, Corporate Place Mbabane<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3575.987264397963!2d31.138838715032584!3d-26.326911883383474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee8ceef406d4171%3A0xc303bdc7759f8d8e!2sCorporate%20Place!5e0!3m2!1sen!2snz!4v1585689757212!5m2!1sen!2snz" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>

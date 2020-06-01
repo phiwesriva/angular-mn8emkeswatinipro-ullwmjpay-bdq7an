@@ -17,7 +17,6 @@ contactForm;
 constructor(
     private formBuilder: FormBuilder,) { 
     this.contactForm = this.formBuilder.group({
-
       nameandsurname: ['', Validators.required],
       Cname: '',
       Cnumber: ['', Validators.required],
@@ -32,11 +31,12 @@ constructor(
 //{}
   
   : void {
-  this.contactForm = new FormGroup({
+  //this.contactForm = new FormGroup({
+    this.contactForm = this.formBuilder.group({
     'nameandsurname': new FormControl(this.contactForm.nameandsurname, [
       Validators.required,
       Validators.minLength(4),
-      forbiddenNameValidator(/bob/i) //<-- Here's how you pass in the custom validator.
+      //forbiddenNameValidator(/bob/i) //<-- Here's how you pass in the custom validator.
     ]),
 
     'Cname': new FormControl(this.contactForm.Cname),
@@ -61,11 +61,11 @@ constructor(
   }
 
   
-/get nameandsurname() { return this.contact.get('nameandsurname'); }
-//get Cnumber() { return this.contact.get('Cnumber'); }
-//get areaofinterest() { return this.contact.get('areaofinterest'); }
-//get Info() { return this.contact.get('Info'); }
-//
+get nameandsurname() { return this.contactForm.get('nameandsurname'); }
+get Cnumber() { return this.contactForm.get('Cnumber'); }
+get areaofinterest() { return this.contactForm.get('areaofinterest'); }
+get Info() { return this.contactForm.get('Info'); }
+
 
 onSubmit(customerData) {
     // Process checkout data here
